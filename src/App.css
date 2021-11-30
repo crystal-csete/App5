@@ -1,38 +1,441 @@
+/** @format */
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
+  height: 100%;
+  width: 100%;
+
+  cursor: default;
+}
+
+.appArrow {
+  font-size: 3rem;
+  font-weight: 800;
+  color: black;
+}
+
+header {
+  margin: 0rem;
+  padding: 0;
+  background-color: #f7f7f7;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > button {
+  margin: 1rem 3rem;
+  padding: 0.6rem 3rem;
+  background-color: #ff6000;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 800;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Nav Page */
+
+nav {
+  display: flex;
+}
+
+.navDiv {
+  background-color: #ffffff;
+  padding: 0.5rem;
+}
+
+.navDiv > nav > ul {
+  list-style-type: none;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+
+  width: 100%;
+  padding: 1rem;
+}
+
+.navImgDiv {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.navDiv > nav > ul > li > a {
+  text-decoration: none;
+  color: #ff6000;
+  font-weight: 800;
+
+  padding: 1rem 2rem;
+}
+
+.navLogo {
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+}
+
+/* FeaturedItems Page */
+
+.featureDiv {
+}
+
+.featureOne,
+.featureTwo,
+.featureThree,
+.featureFour,
+.featureFive,
+.featureSix,
+.featureSeven,
+.featureEight {
+  padding: 1rem;
+
+  min-height: 45.5vh;
+  border-bottom: 8px solid #ffffff;
+  border-top: 8px solid #ffffff;
+}
+
+.featureOne > .featBtnDiv > button,
+.featureTwo > button,
+.featureThree > button,
+.featureFour > .featFourShadow > button,
+.featureFive > .featText > .featCenterDiv > button,
+.featureSix > button,
+.featureSeven > button,
+.featureEight > button {
+  margin: 1rem 0rem;
+  padding: 1rem 2rem;
+  background-color: black;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.featureOne > .featBtnDiv > button:hover,
+.featureTwo > button:hover,
+.featureThree > button:hover,
+.featureFour > .featFourShadow > button:hover,
+.featureFive > .featText > button:hover,
+.featureSix > button:hover,
+.featureSeven > button:hover,
+.featureEight > button:hover {
+  margin: 1rem 0rem;
+  padding: 1rem 2rem;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.featureOne,
+.featureTwo,
+.featureFive,
+.featureSix,
+.featureSeven {
+  background-color: #ff6000;
+}
+
+.featureThree,
+.featureFour,
+.featureEight {
+  min-height: 40vh;
+  height: 100%;
+}
+
+.featureOne > h2,
+.featureOne > p {
+  width: 60%;
+  margin: 0;
+}
+
+/* applies to many features on this page... */
+
+.featDollar {
+  font-size: 4rem;
+}
+
+.featDesc {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.featLegal {
+  font-size: 0.8rem;
+
+  display: flex;
+}
+
+.featOfferDate {
+  font-size: 0.8rem;
+  padding-top: 1.6rem;
+  text-align: right;
+}
+
+.featTitle {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.featDealDesc {
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+.featAddText {
+  font-size: 0.8rem;
+  font-weight: 800;
+
+  padding: 0.5rem;
+}
+
+.featCode {
+  font-size: 1.7rem;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+/* feature Overlay */
+
+.featOverlay {
+  background-color: rgba(241, 232, 232, 0.9);
+  width: 50%;
+  float: right;
+  padding: 1rem 1rem 2rem 1rem;
+  text-align: left;
+  margin: 2rem 1rem;
+}
+
+.featOverlay > h2 {
+  color: #ff6000;
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.featOverlay > .featSubTitle {
+  color: black;
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.featOverlay > .featDescText {
+  padding-bottom: 1rem;
+}
+
+.featOverlay > button {
+  background-color: transparent;
+  padding: 1rem;
+  border: 4px solid #ff6000;
+
+  float: right;
+}
+
+.featOverlay > button > a {
+  text-decoration: none;
+  color: #ff6000;
+  font-weight: 800;
+}
+
+/* featureOne */
+
+.featureOne > .featBtnDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 60%;
+
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+/* featureTwo */
+
+.featureTwo > .featDealImg {
+  width: 30%;
+}
+
+.featDealImg > img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.featureTwo > .featText {
+  width: 70%;
+}
+
+.featureTwo {
+  display: flex;
+}
+
+.featureTwo > .featText > h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 0.5rem;
+}
+
+.featureTwo > .featText > .featTitle {
+  font-size: 3rem;
+}
+
+.featureTwo > .featText > h2,
+.featureTwo > .featText > p {
+  margin: 0;
+}
+
+/* featureThree */
+
+.featureThree {
+  background-image: url("./images/vip.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 42vh;
+}
+
+/* featureFour */
+
+.featureFour {
+  background-image: url("./images/sale.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 49vh;
+
+  color: white;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.featureFour > .featOverlay > .featDescText {
+  color: black;
+  font-size: 1rem;
+}
+
+/* featureFive */
+
+.featureFive {
+  display: flex;
+  padding: 0;
+}
+
+.featureFive > .featText {
+  text-align: left;
+}
+
+.featureFive > .featDealImg {
+  width: 40%;
+  height: 50%;
+}
+
+.featFiveTitle > h2,
+.featFiveTitle > p {
+  margin: 0;
+}
+
+.featFiveTitle > p {
+  font-size: 2rem;
+}
+
+.featFiveTitle > .featTitle {
+  font-size: 2.6rem;
+}
+
+.featFiveTitle {
+  display: flex;
+  width: 100%;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+.two {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.featDealBrownieText {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.featCenterDiv {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.featCenterDiv > .brownieBtn {
+  padding: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.featCenterDiv > .featOfferDate {
+  padding: 0rem 0rem 0rem 1rem;
+  margin: 0;
+  text-align: left;
+}
+
+.featureFive > .featText > .featCenterDiv > button {
+  margin: 0rem 0rem 0.8rem 0rem;
+  padding: 1.4rem 2.3rem;
+  background-color: black;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* featureEight */
+
+.featureEight {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background-color: #ff6000;
+}
+
+/* Footer Page */
+
+.footerDiv {
+  min-height: 20vh;
+  height: 100%;
+  width: 100%;
+
+  border: 6px outset #ffffff;
+  background-color: rgb(229, 228, 226);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footerDiv > footer > address {
+  padding: 2rem;
+}
+
+.footerAd {
+  border: 1px solid white;
+  padding: 3rem;
 }
