@@ -3,6 +3,9 @@
 import React from "react";
 import pizzabread from "./images/pizzabread.jpg";
 import brownie from "./images/brownie.jpg";
+import character from "./images/character.jpg";
+import shop from "./images/shop.jpg";
+import car from "./images/car.jpg";
 
 const FeaturedItems = () => {
   return (
@@ -140,11 +143,159 @@ const FeaturedItems = () => {
         </div>
       </div>
 
+      <div className='featureSix'>
+        {/* left side title div */}
+        <div className='featSixText'>
+          <div className='featSixTitle'>
+            <h2>Now Hiring!</h2>
+            <p className='featJobText'>STORE JOBS</p>
+          </div>
+          <div className='featImgDiv'>
+            <img src={shop} alt='pizza resturant' />
+          </div>
+          <button>APPLY NOW</button>
+        </div>
+
+        {/* right side image div */}
+        <div className='featImgCharacterDiv'>
+          <img src={character} alt='pizza character' />
+        </div>
+      </div>
+
+      <div className='featureSeven'>
+        {/* left side text div */}
+        <div className='featSevText'>
+          <p>
+            RAISE SOME DOUGH FOR YOUR ORGANIZATION WITH LITTLE GALACTIC PIZZA
+            FUNDRAISING
+          </p>
+          <button>LEARN HOW</button>
+        </div>
+        {/* right side image div */}
+        <div className='featImgCharacterDiv'>
+          <img src={character} alt='pizza character' />
+        </div>
+      </div>
+
       <div className='featureEight'>
-        <h2>Now Hiring!</h2>
-        <p>STORE JOBS</p>
-        <button>APPLY NOW</button>
-        <div className='featImgDiv'>{/* <img src={} alt="" /> */}</div>
+        <div className='featEightTopText'>
+          <p className='featEightTitle'>
+            SERVING UP PEACE OF MIND WITH NO-CONTACT ORDERING OPTIONS
+          </p>
+          <p className='featEightSubTitle'>
+            Our pizzas are baked in 475-degree ovens to ensure food safety and
+            never touched after baking. Then, now and always.
+          </p>
+          <p className='featEightOptions'>
+            ⬅NO-CONTACT OPTIONS TO GET YOUR PIZZA ➡
+          </p>
+        </div>
+
+        <div className='featEightBottomText'>
+          <div className='featEightOptionDivs'>
+            <div className='carImg'>
+              <img src={car} alt='red car' />
+            </div>
+            <div className='featEightText'>
+              <h3>ONLINE OR DELIVERY</h3>
+              <p>
+                Left at your door with a ring of the doorbell, if you choose
+              </p>
+            </div>
+          </div>
+
+          <div className='featEightOptionDivs'>
+            <div className='carImg'>
+              <img src={car} alt='red car' />
+            </div>
+            <div className='featEightText'>
+              <h3>ONLINE USING PIZZA PORTAL PICKUP</h3>
+              <p>
+                Held at a safe temperature for you and accessible using a
+                no-contact QR code
+              </p>
+            </div>
+          </div>
+
+          <div className='featEightOptionDivs'>
+            <div className='carImg'>
+              <img src={car} alt='red car' />
+            </div>
+            <div className='featEightText'>
+              <h3>HOT N READY PIZZA</h3>
+              <p>Held at a safe temperature until you get here</p>
+            </div>
+          </div>
+
+          <div className='featEightOptionDivs'>
+            <div className='carImg'>
+              <img src={car} alt='red car' />
+            </div>
+            <div className='featEightText'>
+              <h3>DRIVE THRU & PICK UP WINDOWS</h3>
+              <p>At participating stores</p>
+            </div>
+          </div>
+        </div>
+        <button>LEARN MORE</button>
+      </div>
+
+      <div className='featureBottom'>
+        <div className='featBottomText'>
+          <h4>CREATE YOUR OWN PIZZA</h4>
+        </div>
+        <div className='featBottomText'>
+          <h4>LARGE ROUND PIZZAS</h4>
+        </div>
+        <div className='featBottomText'>
+          <h4>DEEP!DEEP! DISH PIZZAS</h4>
+        </div>
+        <div className='featBottomText'>
+          <h4>BREADSTICKS</h4>
+        </div>
+      </div>
+
+      <div className='featureContact'>
+        <div className='featContactText'>
+          <h4>COMPANY</h4>
+          <ul>
+            <li>Nutrition</li>
+            <li>Our History</li>
+            <li>Hometown Pride</li>
+            <li>Merchandise Store</li>
+          </ul>
+        </div>
+
+        <div className='featContactText'>
+          <h4>CAREERS</h4>
+          <ul>
+            <li>Careers</li>
+            <li>Store Jobs</li>
+            <li>Corporate Jobs</li>
+            <li>Distribution Jobs</li>
+          </ul>
+        </div>
+
+        <div className='featContactText'>
+          <h4>COMMUNITY</h4>
+          <ul>
+            <li>Love Kitchen</li>
+            <li>Galactic Pizza Fundraising</li>
+            <li>Veterans Program</li>
+            <li>AAA Hockey</li>
+            <li>IIitch Charities</li>
+            <li>Million Pizza Giveaway</li>
+          </ul>
+        </div>
+
+        <div className='featContactText'>
+          <h4>CONNECT WITH US</h4>
+          <ul>
+            <li>Customer Contact</li>
+            <li>For the Media</li>
+            <li>International Franchising</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
