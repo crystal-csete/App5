@@ -17,10 +17,12 @@
 }
 
 header {
-  margin: 0rem;
-  padding: 0;
+  margin: 0%;
+  padding: 0%;
   background-color: #f7f7f7;
 
+  height: 8rem;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,8 +85,8 @@ nav {
 
 /* FeaturedItems Page */
 
-.featureDiv {
-}
+/* .featureDiv {
+} */
 
 .featureOne,
 .featureTwo,
@@ -106,11 +108,11 @@ nav {
 .featureThree > button,
 .featureFour > .featFourShadow > button,
 .featureFive > .featText > .featCenterDiv > button,
-.featureSix > button,
-.featureSeven > button,
+.featureSix > .featSixText > button,
+.featureSeven > .featSevText > button,
 .featureEight > button {
   margin: 1rem 0rem;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2.4rem;
   background-color: black;
   color: #ffffff;
   font-size: 1rem;
@@ -126,8 +128,8 @@ nav {
 .featureThree > button:hover,
 .featureFour > .featFourShadow > button:hover,
 .featureFive > .featText > button:hover,
-.featureSix > button:hover,
-.featureSeven > button:hover,
+.featureSix > .featSixText > button:hover,
+.featureSeven > .featSevText > button:hover,
 .featureEight > button:hover {
   margin: 1rem 0rem;
   padding: 1rem 2rem;
@@ -143,13 +145,14 @@ nav {
 .featureTwo,
 .featureFive,
 .featureSix,
-.featureSeven {
+.featureSeven,
+.featureEight {
   background-color: #ff6000;
 }
 
 .featureThree,
 .featureFour,
-.featureEight {
+.featureSix {
   min-height: 40vh;
   height: 100%;
 }
@@ -250,7 +253,7 @@ nav {
   font-weight: 800;
 }
 
-/* featureOne */
+/* featureOne ($6 Hot n Ready Pizza Deal)*/
 
 .featureOne > .featBtnDiv {
   display: flex;
@@ -262,7 +265,7 @@ nav {
   margin-bottom: 2rem;
 }
 
-/* featureTwo */
+/* featureTwo (Free Crazy Bread Online Only Deal)*/
 
 .featureTwo > .featDealImg {
   width: 30%;
@@ -296,7 +299,7 @@ nav {
   margin: 0;
 }
 
-/* featureThree */
+/* featureThree (Exclusive Deals Subscribe)*/
 
 .featureThree {
   background-image: url("./images/vip.jpg");
@@ -307,7 +310,7 @@ nav {
   min-height: 42vh;
 }
 
-/* featureFour */
+/* featureFour (Merch Sale)*/
 
 .featureFour {
   background-image: url("./images/sale.jpg");
@@ -327,7 +330,7 @@ nav {
   font-size: 1rem;
 }
 
-/* featureFive */
+/* featureFive (Cookie Dough Brownie)*/
 
 .featureFive {
   display: flex;
@@ -402,40 +405,282 @@ nav {
   cursor: pointer;
 }
 
-/* featureEight */
+/* featureSix (Now Hiring) */
 
-.featureEight {
+.featureSix {
+  display: flex;
+
+  background-color: #ff6000;
+
+  margin: 0;
+  padding: 0;
+}
+
+.featSixText {
+  width: 60%;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
 
-  background-color: #ff6000;
+.featureSix > .featSixText > button {
+  margin-left: 10%;
+  padding: 1.2rem 2.6rem;
+}
+
+.featSixTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.featSixTitle > h2 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.featJobText {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.featImgDiv {
+  display: flex;
+  padding-left: 16%;
+}
+
+.featImgDiv > img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.featImgCharacterDiv {
+  width: 40%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.featImgCharacterDiv > img {
+  height: 16rem;
+  width: 14rem;
+}
+
+/* featureSeven (Fundraising)*/
+
+.featureSeven {
+  display: flex;
+
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.featureSeven > .featSevText {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.featSevText > p {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: left;
+  line-height: 3.4rem;
+}
+
+.featureSeven > .featSevText > button {
+  align-self: center;
+  padding: 1.2rem 2.4rem;
+}
+
+/* featureEight (No Contact Options) */
+
+.featEightTopText > .featEightTitle {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0%;
+}
+
+.featEightSubTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.featEightOptions {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.featEightBottomText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  padding-bottom: 3rem;
+}
+
+.featEightOptionDivs {
+  width: 60%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.featEightOptionDivs > .carImg > img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.featEightText {
+  text-align: left;
+
+  padding: 0rem 1rem;
+}
+
+/* featureBottom */
+
+.featureBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featBottomText {
+  height: 14rem;
+  width: 14rem;
+
+  margin: 1rem;
+
+  background-image: url("./images/pizzabg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.featBottomText > h4 {
+  color: #ffffff;
+}
+
+/* featureContact */
+
+.featureContact {
+  display: flex;
+
+  margin: 1rem;
+}
+
+.featContactText {
+  height: 16rem;
+  width: 14rem;
+}
+
+.featContactText > h4 {
+  font-weight: 800;
+  text-align: left;
+}
+
+.featContactText > ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 0%;
+  padding: 0%;
+}
+
+.featContactText > ul > li {
+  cursor: pointer;
+  font-weight: 600;
 }
 
 /* Footer Page */
 
-.footerDiv {
-  min-height: 20vh;
-  height: 100%;
-  width: 100%;
-
-  border: 6px outset #ffffff;
-  background-color: rgb(229, 228, 226);
+footer {
+  margin: 1rem 1rem 4rem 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
-footer {
+.footerSocialLinks {
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  font-size: 1rem;
+
+  padding: 0.5rem 0rem;
+  margin: 0rem 0rem 0rem 1rem;
+
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 700;
+}
+
+.appstore {
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.footerDiv > footer > address {
-  padding: 2rem;
+.footerSocialLinks > .appstore > button {
+  height: 2rem;
+  width: 8rem;
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  margin: 0rem 0rem 0rem 1rem;
 }
 
-.footerAd {
-  border: 1px solid white;
-  padding: 3rem;
+.footerSocialLinks > .appstore > p {
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.socials {
+  font-size: 1.2rem;
+}
+
+.footerTermsLinks > ul {
+  list-style: none;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerTermsLinks > ul > li {
+  padding: 1rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.footerRights {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.footerAccess {
+  font-size: 0.9rem;
+  font-weight: 700;
 }

@@ -4,24 +4,41 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className='footerDiv'>
-      <footer>
-        <address>
-          You can contact us at{" "}
-          <a href='http://www.somedomain.com/contact'>www.somedomain.com</a>.
-          <br />
-          Or contact us by mail: <br />
-          Galactic Pizza
-          <br />
-          98755 Pizza Haven Ave <br />
-          Doughyness, CA 98876 <br />
-          USA
-        </address>
-        <div className='footerAd'>
-          <p>ad goes here</p>
+    <footer>
+      <div className='footerSocialLinks'>
+        <div>
+          <p className='socials'>😀 🐦 📷 🤳🏼</p>
         </div>
-      </footer>
-    </div>
+        <div className='appstore'>
+          <p>ORDER ON OUR MOBILE APP</p>
+          <button>App Store</button>
+          <button>Google Play</button>
+        </div>
+      </div>
+      <div>
+        <div className='footerTermsLinks'>
+          <ul>
+            <li>Terms of Service</li>
+            <li>Privacy Policy</li>
+            <li>California Privacy Policy</li>
+            <li>Espanol</li>
+          </ul>
+        </div>
+        <div className='footerRights'>
+          <p>
+            2003-2021 Galactic Pizza Enterprises, Inc. All right reserved. The
+            Galactic Pizza name, logos and related markes are trademarks
+            licensed to Galactic Pizza Enterprises, Inc.
+          </p>
+        </div>
+        <div className='footerAccess'>
+          <p>
+            If you are using a screen reader and having difficulty, please call
+            1-800-555-5555.
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 };
 
