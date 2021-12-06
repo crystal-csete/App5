@@ -98,19 +98,20 @@ nav {
 .featureEight {
   padding: 1rem;
 
-  min-height: 45.5vh;
+  /* min-height: 45.5vh; */
   border-bottom: 8px solid #ffffff;
   border-top: 8px solid #ffffff;
 }
 
-.featureOne > .featBtnDiv > button,
+.featOneBtnDiv > button,
 .featureTwo > button,
 .featureThree > button,
 .featureFour > .featFourShadow > button,
-.featureFive > .featText > .featCenterDiv > button,
-.featureSix > .featSixText > button,
-.featureSeven > .featSevText > button,
-.featureEight > button {
+.featFiveBtnDiv > button,
+.featSixBtnDiv > button,
+.featSevBtnDiv > button,
+.featEightBtnDiv > button,
+.featBottomBtnDiv > button {
   margin: 1rem 0rem;
   padding: 1.2rem 2.4rem;
   background-color: black;
@@ -123,16 +124,17 @@ nav {
   cursor: pointer;
 }
 
-.featureOne > .featBtnDiv > button:hover,
+.featOneBtnDiv > button:hover,
 .featureTwo > button:hover,
 .featureThree > button:hover,
 .featureFour > .featFourShadow > button:hover,
-.featureFive > .featText > button:hover,
-.featureSix > .featSixText > button:hover,
-.featureSeven > .featSevText > button:hover,
-.featureEight > button:hover {
+.featFiveBtnDiv > button:hover,
+.featSixBtnDiv > button:hover,
+.featSevBtnDiv > button:hover,
+.featEightBtnDiv > button:hover,
+.featBottomBtnDiv > button {
   margin: 1rem 0rem;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2.4rem;
   background-color: black;
   color: #ffffff;
   border-radius: 6px;
@@ -163,140 +165,176 @@ nav {
   margin: 0;
 }
 
-/* applies to many features on this page... */
-
-.featDollar {
-  font-size: 4rem;
-}
-
-.featDesc {
-  font-weight: 800;
-  font-size: 1.2rem;
-}
-
-.featLegal {
-  font-size: 0.8rem;
-
-  display: flex;
-}
-
-.featOfferDate {
-  font-size: 0.8rem;
-  padding-top: 1.6rem;
-  text-align: right;
-}
-
-.featTitle {
-  font-size: 4rem;
-  font-weight: 800;
-  color: #ffffff;
-}
-
-.featDealDesc {
-  font-size: 1.5rem;
-  padding: 0;
-}
-
-.featAddText {
-  font-size: 0.8rem;
-  font-weight: 800;
-
-  padding: 0.5rem;
-}
-
-.featCode {
-  font-size: 1.7rem;
-  color: #ffffff;
-  padding: 1rem;
-}
-
-/* feature Overlay */
-
-.featOverlay {
-  background-color: rgba(241, 232, 232, 0.9);
-  width: 50%;
-  float: right;
-  padding: 1rem 1rem 2rem 1rem;
-  text-align: left;
-  margin: 2rem 1rem;
-}
-
-.featOverlay > h2 {
-  color: #ff6000;
-  font-weight: 800;
-  font-size: 1.8rem;
-  margin: 0;
-}
-
-.featOverlay > .featSubTitle {
-  color: black;
-  font-weight: 800;
-  font-size: 1.8rem;
-  margin: 0;
-}
-
-.featOverlay > .featDescText {
-  padding-bottom: 1rem;
-}
-
-.featOverlay > button {
-  background-color: transparent;
-  padding: 1rem;
-  border: 4px solid #ff6000;
-
-  float: right;
-}
-
-.featOverlay > button > a {
-  text-decoration: none;
-  color: #ff6000;
-  font-weight: 800;
-}
-
 /* featureOne ($6 Hot n Ready Pizza Deal)*/
 
-.featureOne > .featBtnDiv {
+.featureOne {
   display: flex;
-  justify-content: space-evenly;
+  padding: 0%;
+}
+
+.featOneWrapperDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  width: 60%;
+
+  width: 100%;
+}
+
+.featOneTextDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.featOneTitleDiv {
+  display: flex;
+}
+
+.featOneDollar {
+  color: black;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.featOneTitle {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 2rem 1rem 0rem 1rem;
+}
+
+.featOneCenterDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featOneDescText {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin: 0%;
+}
+
+.featOneBtnDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
   font-weight: 800;
-  margin-bottom: 2rem;
+}
+
+.featOneDelivery {
+  padding: 0rem 1rem;
+}
+
+.featOneLegalDiv {
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featOneBlankDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30%;
+}
+
+.featOneImgDiv {
+  cursor: default;
+}
+
+.featOneImgDiv > img {
+  width: 50%;
 }
 
 /* featureTwo (Free Crazy Bread Online Only Deal)*/
 
-.featureTwo > .featDealImg {
-  width: 30%;
-}
-
-.featDealImg > img {
-  width: 10rem;
-  height: 10rem;
-}
-
-.featureTwo > .featText {
-  width: 70%;
-}
-
 .featureTwo {
   display: flex;
+  padding: 0%;
 }
 
-.featureTwo > .featText > h2 {
-  font-size: 2rem;
+.featTwoWrapperDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.featTwoTextDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featTwoTitle {
+  font-size: 3rem;
   font-weight: 800;
   padding: 0.5rem;
+  margin: 0%;
 }
 
-.featureTwo > .featText > .featTitle {
+.featTwoSubTitle {
   font-size: 3rem;
+  color: #ffffff;
+  font-weight: 800;
+
+  margin: 0%;
 }
 
-.featureTwo > .featText > h2,
-.featureTwo > .featText > p {
-  margin: 0;
+.featTwoDescText {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin: 0%;
+}
+
+.featTwoCartText {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.featTwoCode {
+  font-size: 2rem;
+  color: #ffffff;
+  margin: 0%;
+}
+
+.featTwoOfferDate {
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featTwoBlankDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.featTwoImgDiv {
+  cursor: default;
+}
+
+.featTwoImgDiv > img {
+  width: 50%;
 }
 
 /* featureThree (Exclusive Deals Subscribe)*/
@@ -307,7 +345,70 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
 
-  min-height: 42vh;
+  display: flex;
+  padding: 0%;
+}
+
+.featThreeCrazyDiv {
+  width: 30%;
+
+  color: #ffffff;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.featThreeBlankDiv {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.featThreeOverlay {
+  background-color: rgba(248, 245, 245, 0.89);
+
+  max-width: 50vw;
+  padding: 1rem;
+  margin: 4rem 2rem;
+}
+
+.featThreeOverlay > h2 {
+  color: #ff6000;
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.featThreeSubTitle {
+  color: black;
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.featThreeDescText {
+  padding-bottom: 1rem;
+}
+
+.featThreeBtnDiv {
+  margin: 0%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.featThreeBtnDiv > button {
+  background-color: transparent;
+  padding: 1rem;
+  border: 4px solid #ff6000;
+}
+
+.featThreeBtnDiv > button > a {
+  text-decoration: none;
+  color: #ff6000;
+  font-weight: 800;
 }
 
 /* featureFour (Merch Sale)*/
@@ -318,196 +419,306 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
 
-  min-height: 49vh;
-
-  color: white;
-  font-weight: 700;
-  font-size: 1.8rem;
+  display: flex;
+  padding: 0%;
 }
 
-.featureFour > .featOverlay > .featDescText {
+.featFourEmptyDiv {
+  width: 30%;
+
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featFourBlankDiv {
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.featFourOverlay {
+  background-color: rgba(248, 245, 245, 0.89);
+
+  max-width: 50vw;
+  padding: 1rem;
+  margin: 4rem 2rem;
+
+  text-align: left;
+}
+
+.featFourOverlay > h2 {
+  color: #ff6000;
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0%;
+}
+
+.featFourSubTitle {
   color: black;
-  font-size: 1rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0%;
+}
+
+.featFourDescText {
+  padding-bottom: 1rem;
+}
+
+.featFourBtnDiv {
+  margin: 0%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.featFourBtnDiv > button {
+  background-color: transparent;
+  padding: 1rem;
+  border: 4px solid #ff6000;
+}
+
+.featFourBtnDiv > button > a {
+  text-decoration: none;
+  color: #ff6000;
+  font-weight: 800;
 }
 
 /* featureFive (Cookie Dough Brownie)*/
 
 .featureFive {
   display: flex;
-  padding: 0;
+  padding: 0%;
 }
 
-.featureFive > .featText {
-  text-align: left;
+.featFiveWrapperDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 0% 10%;
 }
 
-.featureFive > .featDealImg {
-  width: 40%;
-  height: 50%;
+.featFiveTextDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 60%;
 }
 
-.featFiveTitle > h2,
-.featFiveTitle > p {
-  margin: 0;
+.featFiveTitleDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0rem 1rem;
 }
 
-.featFiveTitle > p {
-  font-size: 2rem;
+.featFivePriceImgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.featFiveTitle > .featTitle {
-  font-size: 2.6rem;
+.featFivePriceImgDiv > img {
+  height: 100px;
+  width: 100px;
 }
 
 .featFiveTitle {
-  display: flex;
-  width: 100%;
-  padding: 0rem 1rem 0rem 1rem;
+  color: #ffffff;
+  font-size: 3rem;
+  padding: 0rem 1rem;
+  margin: 0%;
 }
 
-.two {
-  display: flex;
-  flex-direction: column;
+.featFiveSubTitle {
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 0% 0% 0% 16%;
+
+  margin: 0%;
 }
 
-.featDealBrownieText {
-  font-size: 2rem;
-  padding-bottom: 1rem;
+.featFiveDescText {
+  font-size: 1rem;
+  font-weight: bold;
 }
 
-.featCenterDiv {
+.featFiveCenterDiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.featCenterDiv > .brownieBtn {
-  padding: 0.5rem;
+.featFiveOfferDate {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.featCenterDiv > .featOfferDate {
-  padding: 0rem 0rem 0rem 1rem;
-  margin: 0;
-  text-align: left;
+.featFiveOfferDate > p {
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: bold;
+
+  margin: 0%;
 }
 
-.featureFive > .featText > .featCenterDiv > button {
-  margin: 0rem 0rem 0.8rem 0rem;
-  padding: 1.4rem 2.3rem;
-  background-color: black;
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: 800;
-  border-radius: 10px;
-  outline: none;
-  border: none;
-  cursor: pointer;
+.featFiveBlankDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+}
+
+.featFiveDealImgDiv {
+  cursor: default;
+  display: flex;
+}
+
+.featFiveDealImgDiv > img {
+  width: 300px;
+  height: 300px;
 }
 
 /* featureSix (Now Hiring) */
 
 .featureSix {
   display: flex;
-
-  background-color: #ff6000;
-
-  margin: 0;
-  padding: 0;
+  padding: 0%;
 }
 
-.featSixText {
-  width: 60%;
-
+.featSixTitleDiv {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: flex-end;
+  width: 70%;
 }
 
-.featureSix > .featSixText > button {
-  margin-left: 10%;
-  padding: 1.2rem 2.6rem;
+.featSixHiring {
+  display: flex;
+  flex-direction: column;
 }
 
-.featSixTitle {
+.featSixJobText {
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0%;
+  padding-bottom: 0.5rem;
+}
+
+.featSixLowWrapperDiv {
   display: flex;
   justify-content: flex-start;
-  align-items: baseline;
-}
-
-.featSixTitle > h2 {
-  font-size: 1.8rem;
-  text-align: center;
-}
-
-.featJobText {
-  color: #ffffff;
-  font-size: 2.2rem;
-  font-weight: 800;
-  text-align: center;
-}
-
-.featImgDiv {
-  display: flex;
-  padding-left: 16%;
-}
-
-.featImgDiv > img {
-  width: 10rem;
-  height: 10rem;
-}
-
-.featImgCharacterDiv {
-  width: 40%;
-
-  display: flex;
-  justify-content: center;
   align-items: flex-end;
 }
 
-.featImgCharacterDiv > img {
-  height: 16rem;
-  width: 14rem;
+.featSixImgShopDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featSixImgShopDiv > img {
+  width: 30%;
+}
+
+.featSixImgCharDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.featSixImgCharDiv > img {
+  width: 32%;
+}
+
+.featSixBtnDiv {
+  padding: 1rem;
 }
 
 /* featureSeven (Fundraising)*/
 
 .featureSeven {
   display: flex;
-
-  padding: 0rem 1rem 1rem 1rem;
+  padding: 0%;
 }
 
-.featureSeven > .featSevText {
-  width: 90%;
+.featSevWrapperDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
+  width: 100%;
+  padding: 0% 16%;
+}
+
+.featSevTextDiv {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
-.featSevText > p {
+.featSevText {
   font-size: 3rem;
   font-weight: 800;
   color: #ffffff;
-  text-align: left;
-  line-height: 3.4rem;
 }
 
-.featureSeven > .featSevText > button {
-  align-self: center;
-  padding: 1.2rem 2.4rem;
+.featSevBtnDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.featSevBlankDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.featSevImgCharDiv {
+  display: flex;
+}
+
+.featSevImgCharDiv > img {
+  width: 340px;
+  height: 340px;
 }
 
 /* featureEight (No Contact Options) */
 
-.featEightTopText > .featEightTitle {
+.featureEight {
+  padding: 0% 16%;
+}
+
+.featEightTopTextDiv {
+  cursor: default;
+}
+
+.featEightTitle {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  margin: 0%;
 }
 
 .featEightSubTitle {
@@ -519,28 +730,28 @@ nav {
   color: #ffffff;
   font-size: 2rem;
   font-weight: 800;
+  margin: 0%;
 }
 
-.featEightBottomText {
+.featEightLowWrapperDiv {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
   flex-wrap: wrap;
-
-  padding-bottom: 3rem;
-}
-
-.featEightOptionDivs {
-  width: 60%;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
-.featEightOptionDivs > .carImg > img {
+.featEightOptionDivs {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.featEightCarImgDiv {
+  cursor: default;
+}
+
+.featEightCarImgDiv > img {
   width: 4rem;
   height: 4rem;
 }
@@ -551,7 +762,7 @@ nav {
   padding: 0rem 1rem;
 }
 
-/* featureBottom */
+/* featureBottom (create your own pizza) */
 
 .featureBottom {
   display: flex;
@@ -559,20 +770,39 @@ nav {
   align-items: center;
 }
 
-.featBottomText {
-  height: 14rem;
-  width: 14rem;
+.featBottomTextDiv {
+  height: 20rem;
+  width: 16rem;
 
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  background-image: url("./images/pizzabg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  border: 1px solid red;
 }
 
-.featBottomText > h4 {
-  color: #ffffff;
+.featBottomTextDiv > h4 {
+  color: black;
+}
+
+.featBottomImgDiv {
+  border: 1px solid black;
+  /* height: 14rem;
+  width: 14rem; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.featBottomImgDiv > img {
+  width: 200px;
+  height: 200px;
+}
+
+.featBottomBtnDiv {
 }
 
 /* featureContact */

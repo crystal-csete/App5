@@ -2,183 +2,254 @@
 
 import React from "react";
 import pizzabread from "./images/pizzabread.jpg";
-import brownie from "./images/brownie.jpg";
+import brownie from "./images/brownie.png";
 import character from "./images/character.jpg";
 import shop from "./images/shop.jpg";
-import car from "./images/car.jpg";
+import car from "./images/car.png";
+import price from "./images/price.png";
+import phone from "./images/phone.png";
+import drivethru from "./images/drivethru.png";
+import pizza from "./images/pizza.png";
+import pizzabg from "./images/pizzabg.jpg";
 
 const FeaturedItems = () => {
   return (
     <div className='featureDiv'>
+      {/* FEATURE ONE */}
       <div className='featureOne'>
-        <h2>
-          <strong className='featDollar'>$6 </strong>Hot-N-Ready 4-8PM
-        </h2>
-        <p className='featTitle'>SLICES-N-STIX</p>
-        <p className='featDesc'>
-          4 PEPPERONI SLICES + 8 ITALIAN CHEESE
-          <br />
-          STIX + CRAZY SAUCE
-        </p>
-        <div className='featBtnDiv'>
-          <p>
-            Delivery!
-            <br />
-            ...Delivery!
-          </p>
-          <button>
-            ORDER <br /> NOW
-          </button>
-        </div>
-        <div className='featLegal'>
-          <p>
-            Plus tax where applicable. Available at participating locations.
-            Prices may vary. Prices higher in AK and HI.
-          </p>
-        </div>
-      </div>
+        {/* wrapper div to wrap middle div and legal div*/}
+        <div className='featOneWrapperDiv'>
+          {/* middle "description" text div */}
+          <div className='featOneTextDiv'>
+            {/* left side "$6" text div */}
+            <div className='featOneTitleDiv'>
+              <p className='featOneDollar'>$6</p>
+            </div>
 
-      <div className='featureTwo'>
-        {/* image div for pizza and breadsticks */}
-        <div className='featDealImg'>
-          <img src={pizzabread} alt='pizza and breadsticks' />
-        </div>
-        {/* right div for all words */}
-        <div className='featText'>
-          <h2>
-            Online-Only
-            <br />
-            Deal
-          </h2>
-          <p className='featTitle'>
-            FREE CRAZY <br />
-            BREAD
-          </p>
-          <p className='featDealDesc'>With any custom pizza purchase</p>
-          <p className='featAddText'>ADD TO CART - ENTER CODE</p>
-          <p className='featCode'>
-            🍕<strong>GETYOURBREAD1</strong>🍕
-          </p>
-          <p className='featOfferDate'>
-            Offer good until January 1, 2022.Lorem Ipsum is simply dummy text of
-            the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries, but also the
-            leap into electronic typesetting, remaining essentially unchanged.
-            It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like Aldus PageMaker including versions of Lorem
-            Ipsum.
-          </p>
-        </div>
-      </div>
-
-      <div className='featureThree'>
-        <div className='featOverlay'>
-          <h2>WANT ACCESS TO</h2>
-          <p className='featSubTitle'>Exclusive Deals?</p>
-          <p className='featDescText'>
-            Subscribe for access to exclusive offers, promotions, and NEW
-            Crazy!Crazy! Deals
-          </p>
-          <button>
-            <a href='#signup'>SUBSCRIBE NOW ▶</a>
-          </button>
-        </div>
-      </div>
-
-      <div className='featureFour'>
-        <div className='featOverlay'>
-          <h2>TASTY MERCH</h2>
-          <p className='featSubTitle'>Your eyes desire</p>
-          <p className='featDescText'>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-          </p>
-          <button>
-            <a href='#shopnow'>SHOP NOW</a>
-          </button>
-        </div>
-      </div>
-
-      <div className='featureFive'>
-        {/* left side text description div */}
-        <div className='featText'>
-          <div className='featFiveTitle'>
-            <h2>
-              <strong className='featDollar'>$3.69</strong>
-            </h2>
-            <div className='featFiveTitle two'>
-              <p className='featTitle'>
-                COOKIE <br /> DOUGH
+            {/* middle content div */}
+            <div className='featOneCenterDiv'>
+              <p className='featOneTitle'>SLICES-N-STIX</p>
+              <p className='featOneDescText'>
+                4 PEPPERONI SLICES + 8 ITALIAN CHEESE STIX + CRAZY SAUCE
               </p>
-              <h2 className='featDealBrownieText'>Brownie</h2>
+
+              {/* order button div inside middle content div*/}
+              <div className='featOneBtnDiv'>
+                <p className='featOneDelivery'>🚘 Delivery!</p>
+                <p className='featOneDelivery'>Delivery! 🎇</p>
+                <button>ORDER NOW</button>
+              </div>
+              {/* under all divs "legal section" */}
+              <div className='featOneLegalDiv'>
+                <p>
+                  Plus tax where applicable. Available at participating
+                  locations. Prices may vary. Prices higher in AK and HI.
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* middle content div */}
-          <div className='featCenterDiv'>
-            <p className='featAddText'>
-              BROWNIE TOPPED WITH COOKIE DOUGH FROSTING AND M&M'S
-              <br />
-              MINIS CHOCOLATE CANDIES | 4-PIECE ORDER
+          {/* right image div */}
+          <div className='featOneBlankDiv'>
+            <div className='featOneImgDiv'>
+              <img src={pizzabread} alt='pizza and breadsticks' />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FEATURE TWO */}
+      <div className='featureTwo'>
+        {/* wrapper div to wrap middle div and legal div */}
+        <div className='featTwoWrapperDiv'>
+          {/* left side image div */}
+          <div className='featTwoBlankDiv'>
+            <div className='featTwoImgDiv'>
+              <img src={pizzabread} alt='pizza and breadsticks' />
+            </div>
+          </div>
+
+          {/* right side content div */}
+          <div className='featTwoTextDiv'>
+            <p className='featTwoTitle'>Online-Only Deal</p>
+            <p className='featTwoSubTitle'>FREE CRAZY BREAD</p>
+            <p className='featTwoDescText'>With any custom pizza purchase</p>
+            <p className='featTwoCartText'>ADD TO CART - ENTER CODE</p>
+            <p className='featTwoCode'>
+              🍕<strong>GETYOURBREAD1</strong>🍕
             </p>
-            <button className='brownieBtn'>ORDER NOW</button>
-            <p className='featOfferDate'>
+            <p className='featTwoOfferDate'>
+              Offer good until January 1, 2022.Lorem Ipsum is simply dummy text
+              of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an
+              unknown printer took a galley of type and scrambled it to make a
+              type specimen book. It has survived not only five centuries, but
+              also the leap into electronic typesetting, remaining essentially
+              unchanged.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* FEATURE THREE */}
+      <div className='featureThree'>
+        {/* left side text div */}
+        <div className='featThreeCrazyDiv'>
+          <h2>Crazy!Crazy!Deals</h2>
+        </div>
+        {/* right side div */}
+        <div className='featThreeBlankDiv'>
+          {/* right side overlay div */}
+          <div className='featThreeOverlay'>
+            <h2>WANT ACCESS TO</h2>
+            <p className='featThreeSubTitle'>Exclusive Deals?</p>
+            <p className='featThreeDescText'>
+              Subscribe for access to exclusive offers, promotions, and NEW
+              Crazy!Crazy! Deals
+            </p>
+            <div className='featThreeBtnDiv'>
+              <button>
+                <a href='#signup'>SUBSCRIBE NOW ▶</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FEATURE FOUR */}
+      <div className='featureFour'>
+        {/* left side of empty div */}
+        <div className='featFourEmptyDiv'></div>
+        {/* right side div */}
+        <div className='featFourBlankDiv'>
+          <div className='featFourOverlay'>
+            <h2>TASTY MERCH</h2>
+            <p className='featFourSubTitle'>Your eyes desire</p>
+            <p className='featFourDescText'>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
             </p>
+            <div className='featFourBtnDiv'>
+              <button>
+                <a href='#shopnow'>SHOP NOW</a>
+              </button>
+            </div>
           </div>
-        </div>
-
-        {/* right side image div */}
-        <div className='featDealImg'>
-          <img src={brownie} alt='desert' />
         </div>
       </div>
 
+      {/* FEATURE FIVE */}
+      <div className='featureFive'>
+        {/* wrapper div to wrap middle div and offer date div */}
+        <div className='featFiveWrapperDiv'>
+          {/* middle "description" text div */}
+          <div className='featFiveTextDiv'>
+            {/* left side "3.69" text div */}
+            <div className='featFiveTitleDiv'>
+              <div className='featFivePriceImgDiv'>
+                <img
+                  src={price}
+                  alt='hot price tag'
+                  className='featFiveDollar'
+                />
+              </div>
+
+              <h1 className='featFiveTitle'>
+                COOKIE <br /> DOUGH
+              </h1>
+            </div>
+
+            <p className='featFiveSubTitle'>Brownie</p>
+
+            {/* middle content div */}
+            <div className='featFiveCenterDiv'>
+              <p className='featFiveDescText'>
+                BROWNIE TOPPED WITH COOKIE DOUGH FROSTING AND M&M'S
+                <br />
+                MINIS CHOCOLATE CANDIES | 4-PIECE ORDER
+              </p>
+              {/* order button div inside middle content div */}
+              <div className='featFiveBtnDiv'>
+                <button>ORDER NOW</button>
+              </div>
+            </div>
+            {/* under all divs "offer section" */}
+            <div className='featFiveOfferDate'>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+            </div>
+          </div>
+
+          {/* right side image div */}
+          <div className='featFiveBlankDiv'>
+            <div className='featFiveDealImgDiv'>
+              <img src={brownie} alt='brownies' />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* FEATURE SIX */}
       <div className='featureSix'>
-        {/* left side title div */}
-        <div className='featSixText'>
-          <div className='featSixTitle'>
-            <h2>Now Hiring!</h2>
-            <p className='featJobText'>STORE JOBS</p>
+        {/* upper title div */}
+        <div className='featSixTitleDiv'>
+          <div className='featSixHiring'>
+            <p className='featSixJobText'>Now Hiring! STORE JOBS</p>
+            {/* lower left image div */}
+            <div className='featSixImgShopDiv'>
+              <img src={shop} alt='pizza resturant' />
+            </div>
           </div>
-          <div className='featImgDiv'>
-            <img src={shop} alt='pizza resturant' />
-          </div>
-          <button>APPLY NOW</button>
         </div>
 
-        {/* right side image div */}
-        <div className='featImgCharacterDiv'>
-          <img src={character} alt='pizza character' />
+        {/* wrapper div for lower right divs */}
+        <div className='featSixLowWrapperDiv'>
+          {/* lower right image div */}
+          <div className='featSixImgCharDiv'>
+            <img src={character} alt='pizza character' />
+            {/* right side button div */}
+            <div className='featSixBtnDiv'>
+              <button>APPLY NOW</button>
+            </div>
+          </div>
         </div>
       </div>
 
+      {/* FEATURE SEVEN */}
       <div className='featureSeven'>
-        {/* left side text div */}
-        <div className='featSevText'>
-          <p>
-            RAISE SOME DOUGH FOR YOUR ORGANIZATION WITH LITTLE GALACTIC PIZZA
-            FUNDRAISING
-          </p>
-          <button>LEARN HOW</button>
-        </div>
-        {/* right side image div */}
-        <div className='featImgCharacterDiv'>
-          <img src={character} alt='pizza character' />
+        {/* wrapper div to wrap text and image */}
+        <div className='featSevWrapperDiv'>
+          {/* left side text div */}
+          <div className='featSevTextDiv'>
+            <p className='featSevText'>
+              RAISE SOME DOUGH FOR YOUR ORGANIZATION WITH GALACTIC PIZZA
+              FUNDRAISING
+            </p>
+            <div className='featSevBtnDiv'>
+              <button>LEARN HOW</button>
+            </div>
+          </div>
+
+          {/* right side image div */}
+          <div className='featSevBlankDiv'>
+            <div className='featSevImgCharDiv'>
+              <img src={character} alt='pizza character' />
+            </div>
+          </div>
         </div>
       </div>
 
+      {/* FEATURE EIGHT */}
       <div className='featureEight'>
-        <div className='featEightTopText'>
+        {/* upper title div */}
+        <div className='featEightTopTextDiv'>
           <p className='featEightTitle'>
             SERVING UP PEACE OF MIND WITH NO-CONTACT ORDERING OPTIONS
           </p>
@@ -191,11 +262,16 @@ const FeaturedItems = () => {
           </p>
         </div>
 
-        <div className='featEightBottomText'>
+        {/* wrapper for lower divs for "no contact options" */}
+        <div className='featEightLowWrapperDiv'>
+          {/* "delivery options" div */}
           <div className='featEightOptionDivs'>
-            <div className='carImg'>
+            {/* thumbnail image for option divs*/}
+            <div className='featEightCarImgDiv'>
               <img src={car} alt='red car' />
             </div>
+
+            {/* "description" text div */}
             <div className='featEightText'>
               <h3>ONLINE OR DELIVERY</h3>
               <p>
@@ -204,10 +280,14 @@ const FeaturedItems = () => {
             </div>
           </div>
 
+          {/* "delivery options" div */}
           <div className='featEightOptionDivs'>
-            <div className='carImg'>
-              <img src={car} alt='red car' />
+            {/* thumbnail image for option divs*/}
+            <div className='featEightCarImgDiv'>
+              <img src={phone} alt='phone' />
             </div>
+
+            {/* "description" text div */}
             <div className='featEightText'>
               <h3>ONLINE USING PIZZA PORTAL PICKUP</h3>
               <p>
@@ -217,44 +297,79 @@ const FeaturedItems = () => {
             </div>
           </div>
 
+          {/* "delivery options" div */}
           <div className='featEightOptionDivs'>
-            <div className='carImg'>
-              <img src={car} alt='red car' />
+            {/* thumbnail image for option divs*/}
+            <div className='featEightCarImgDiv'>
+              <img src={pizza} alt='hot pizza' />
             </div>
+
+            {/* "description" text div */}
             <div className='featEightText'>
               <h3>HOT N READY PIZZA</h3>
               <p>Held at a safe temperature until you get here</p>
             </div>
           </div>
 
+          {/* "delivery options" div */}
           <div className='featEightOptionDivs'>
-            <div className='carImg'>
-              <img src={car} alt='red car' />
+            {/* thumbnail image for option divs*/}
+            <div className='featEightCarImgDiv'>
+              <img src={drivethru} alt='drive thru' />
             </div>
+
+            {/* "description" text div */}
             <div className='featEightText'>
               <h3>DRIVE THRU & PICK UP WINDOWS</h3>
               <p>At participating stores</p>
             </div>
           </div>
         </div>
-        <button>LEARN MORE</button>
+
+        {/* "learn more" button div */}
+        <div className='featEightBtnDiv'>
+          <button>LEARN MORE</button>
+        </div>
       </div>
 
+      {/* FEATURE BOTTOM */}
       <div className='featureBottom'>
-        <div className='featBottomText'>
-          <h4>CREATE YOUR OWN PIZZA</h4>
+        <div className='featBottomTextDiv'>
+          <div className='featBottomImgDiv'>
+            <h4>CREATE YOUR OWN PIZZA</h4>
+            <img src={pizzabg} alt='pepperoni pizza' />
+          </div>
         </div>
-        <div className='featBottomText'>
-          <h4>LARGE ROUND PIZZAS</h4>
+        <div className='featBottomTextDiv'>
+          <div className='featBottomImgDiv'>
+            <h4>LARGE ROUND PIZZAS</h4>
+            <img src={pizzabg} alt='pepperoni pizza' />
+          </div>
         </div>
-        <div className='featBottomText'>
-          <h4>DEEP!DEEP! DISH PIZZAS</h4>
+        <div className='featBottomTextDiv'>
+          <div className='featBottomImgDiv'>
+            <h4>DEEP!DEEP! DISH PIZZAS</h4>
+            <img src={pizzabg} alt='pepperoni pizza' />
+          </div>
         </div>
-        <div className='featBottomText'>
-          <h4>BREADSTICKS</h4>
+        <div className='featBottomTextDiv'>
+          <div className='featBottomImgDiv'>
+            <h4>BREADSTICKS</h4>
+            <img src={pizzabg} alt='pepperoni pizza' />
+          </div>
+        </div>
+        <div className='featBottomTextDiv'>
+          <div className='featBottomImgDiv'>
+            <h4>BECOME A FRANCHISEE TODAY!</h4>
+            <img src={pizzabg} alt='pepperoni pizza' />
+          </div>
+          <div className='featBottomBtnDiv'>
+            <button>LEARN MORE</button>
+          </div>
         </div>
       </div>
 
+      {/* FEATURE CONTACT */}
       <div className='featureContact'>
         <div className='featContactText'>
           <h4>COMPANY</h4>
