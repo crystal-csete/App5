@@ -1,6 +1,8 @@
 /** @format */
 
 import React from "react";
+import featone from "./images/featone.jpg";
+import feattwo from "./images/feattwo.png";
 import pizzabread from "./images/pizzabread.jpg";
 import brownie from "./images/brownie.png";
 import character from "./images/character.jpg";
@@ -11,15 +13,22 @@ import phone from "./images/phone.png";
 import drivethru from "./images/drivethru.png";
 import pizza from "./images/pizza.png";
 import pizzabg from "./images/pizzabg.jpg";
+import supremebg from "./images/supremebg.jpg";
+import sidebg from "./images/sidebg.jpg";
+import deepdishbg from "./images/deepdishbg.jpg";
 
 const FeaturedItems = () => {
   return (
     <div className='featureDiv'>
       {/* FEATURE ONE */}
+      {/* move these features into their own component */}
+
       <div className='featureOne'>
         {/* wrapper div to wrap middle div and legal div*/}
+
         <div className='featOneWrapperDiv'>
           {/* middle "description" text div */}
+
           <div className='featOneTextDiv'>
             {/* left side "$6" text div */}
             <div className='featOneTitleDiv'>
@@ -28,16 +37,25 @@ const FeaturedItems = () => {
 
             {/* middle content div */}
             <div className='featOneCenterDiv'>
-              <p className='featOneTitle'>SLICES-N-STIX</p>
+              <p className='featOneTitle'>Hot-N-Ready 4-8 PM</p>
+              <p className='featOneSubtitle'>SLICES-N-STIX</p>
               <p className='featOneDescText'>
                 4 PEPPERONI SLICES + 8 ITALIAN CHEESE STIX + CRAZY SAUCE
               </p>
 
               {/* order button div inside middle content div*/}
-              <div className='featOneBtnDiv'>
-                <p className='featOneDelivery'>🚘 Delivery!</p>
-                <p className='featOneDelivery'>Delivery! 🎇</p>
-                <button>ORDER NOW</button>
+              <div className='featOneOuterBtnDiv'>
+                <div className='featOneBtnWrapperDiv'>
+                  <p className='featOneDelivery'>🚘 Delivery!</p>
+                  <p className='featOneDelivery'>Delivery! 🎇</p>
+
+                  {/* button div */}
+                  <div className='featOneBtnDiv'>
+                    <button>ORDER NOW</button>
+                  </div>
+                  {/* end of btn wrapper div below */}
+                </div>
+                {/* end of outer btn wrapper div below */}
               </div>
               {/* under all divs "legal section" */}
               <div className='featOneLegalDiv'>
@@ -46,16 +64,22 @@ const FeaturedItems = () => {
                   locations. Prices may vary. Prices higher in AK and HI.
                 </p>
               </div>
+              {/* end of center div below */}
             </div>
+            {/* end of text div below */}
           </div>
 
           {/* right image div */}
           <div className='featOneBlankDiv'>
             <div className='featOneImgDiv'>
-              <img src={pizzabread} alt='pizza and breadsticks' />
+              <img src={featone} alt='pizza' />
             </div>
           </div>
+
+          {/* end of wrapper div below */}
         </div>
+
+        {/* end of feature one div below */}
       </div>
 
       {/* FEATURE TWO */}
@@ -65,7 +89,7 @@ const FeaturedItems = () => {
           {/* left side image div */}
           <div className='featTwoBlankDiv'>
             <div className='featTwoImgDiv'>
-              <img src={pizzabread} alt='pizza and breadsticks' />
+              <img src={feattwo} className='featTwoImg' alt='pepperoni pizza' />
             </div>
           </div>
 
@@ -334,82 +358,107 @@ const FeaturedItems = () => {
 
       {/* FEATURE BOTTOM */}
       <div className='featureBottom'>
-        <div className='featBottomTextDiv'>
-          <div className='featBottomImgDiv'>
-            <h4>CREATE YOUR OWN PIZZA</h4>
-            <img src={pizzabg} alt='pepperoni pizza' />
+        {/* wrapper div to wrap all divs */}
+        <div className='featBottomWrapperDiv'>
+          {/* Div 1 with text and image */}
+          <div className='featBottomDiv'>
+            {/* text div */}
+            <div className='featBottomTextDiv'>CREATE YOUR OWN PIZZA</div>
+            <img
+              src={supremebg}
+              className='featBottomImage'
+              alt='supreme pizza'
+            />
           </div>
-        </div>
-        <div className='featBottomTextDiv'>
-          <div className='featBottomImgDiv'>
-            <h4>LARGE ROUND PIZZAS</h4>
-            <img src={pizzabg} alt='pepperoni pizza' />
+
+          {/* Div 2 with text and image */}
+          <div className='featBottomDiv'>
+            {/* text div */}
+            <div className='featBottomTextDiv'>LARGE ROUND PIZZA</div>
+            <img
+              src={pizzabg}
+              className='featBottomImage'
+              alt='pepperoni pizza'
+            />
           </div>
-        </div>
-        <div className='featBottomTextDiv'>
-          <div className='featBottomImgDiv'>
-            <h4>DEEP!DEEP! DISH PIZZAS</h4>
-            <img src={pizzabg} alt='pepperoni pizza' />
+
+          {/* Div 3 with text and image */}
+          <div className='featBottomDiv'>
+            {/* text div */}
+            <div className='featBottomTextDiv'>DEEP DISH PIZZA</div>
+            <img
+              src={deepdishbg}
+              className='featBottomImage'
+              alt='deep dish pizza'
+            />
           </div>
-        </div>
-        <div className='featBottomTextDiv'>
-          <div className='featBottomImgDiv'>
-            <h4>BREADSTICKS</h4>
-            <img src={pizzabg} alt='pepperoni pizza' />
+
+          {/* Div 4 with text and image */}
+          <div className='featBottomDiv'>
+            {/* text div */}
+            <div className='featBottomTextDiv'>SIDE DISHES!</div>
+            <img
+              src={sidebg}
+              className='featBottomImage'
+              alt='breadsticks and marinara sauce'
+            />
           </div>
-        </div>
-        <div className='featBottomTextDiv'>
-          <div className='featBottomImgDiv'>
-            <h4>BECOME A FRANCHISEE TODAY!</h4>
-            <img src={pizzabg} alt='pepperoni pizza' />
-          </div>
-          <div className='featBottomBtnDiv'>
-            <button>LEARN MORE</button>
+
+          {/* Div 5 option "learn more" button */}
+          <div className='featBottomDiv franDiv'>
+            {/* text div */}
+            <div className='featBottomTextDiv '>BECOME A FRANCHISEE TODAY!</div>
+            <div className='featBottomBtnDiv'>
+              <button>LEARN MORE</button>
+            </div>
           </div>
         </div>
       </div>
 
       {/* FEATURE CONTACT */}
       <div className='featureContact'>
-        <div className='featContactText'>
-          <h4>COMPANY</h4>
-          <ul>
-            <li>Nutrition</li>
-            <li>Our History</li>
-            <li>Hometown Pride</li>
-            <li>Merchandise Store</li>
-          </ul>
-        </div>
+        {/* wrapper div for all text / list divs */}
+        <div className='featContactWrapperDiv'>
+          <div className='featContactText'>
+            <h4>COMPANY</h4>
+            <ul>
+              <li>Nutrition</li>
+              <li>Our History</li>
+              <li>Hometown Pride</li>
+              <li>Merchandise Store</li>
+            </ul>
+          </div>
 
-        <div className='featContactText'>
-          <h4>CAREERS</h4>
-          <ul>
-            <li>Careers</li>
-            <li>Store Jobs</li>
-            <li>Corporate Jobs</li>
-            <li>Distribution Jobs</li>
-          </ul>
-        </div>
+          <div className='featContactText'>
+            <h4>CAREERS</h4>
+            <ul>
+              <li>Careers</li>
+              <li>Store Jobs</li>
+              <li>Corporate Jobs</li>
+              <li>Distribution Jobs</li>
+            </ul>
+          </div>
 
-        <div className='featContactText'>
-          <h4>COMMUNITY</h4>
-          <ul>
-            <li>Love Kitchen</li>
-            <li>Galactic Pizza Fundraising</li>
-            <li>Veterans Program</li>
-            <li>AAA Hockey</li>
-            <li>IIitch Charities</li>
-            <li>Million Pizza Giveaway</li>
-          </ul>
-        </div>
+          <div className='featContactText'>
+            <h4>COMMUNITY</h4>
+            <ul>
+              <li>Love Kitchen</li>
+              <li>Galactic Pizza Fundraising</li>
+              <li>Veterans Program</li>
+              <li>AAA Hockey</li>
+              <li>IIitch Charities</li>
+              <li>Million Pizza Giveaway</li>
+            </ul>
+          </div>
 
-        <div className='featContactText'>
-          <h4>CONNECT WITH US</h4>
-          <ul>
-            <li>Customer Contact</li>
-            <li>For the Media</li>
-            <li>International Franchising</li>
-          </ul>
+          <div className='featContactText'>
+            <h4>CONNECT WITH US</h4>
+            <ul>
+              <li>Customer Contact</li>
+              <li>For the Media</li>
+              <li>International Franchising</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
