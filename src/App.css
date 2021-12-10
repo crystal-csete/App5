@@ -42,24 +42,19 @@ header > button {
 
 /* Nav Page */
 
-nav {
-  display: flex;
-}
-
 .navDiv {
   background-color: #ffffff;
-  padding: 0.5rem;
+  padding: 1rem 0rem;
 }
 
-.navDiv > nav > ul {
-  list-style-type: none;
-
+nav {
   display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 
-  width: 100%;
-  padding: 1rem;
+  padding: 0% 11%;
+  max-width: 100%;
 }
 
 .navImgDiv {
@@ -69,18 +64,38 @@ nav {
   align-items: center;
 }
 
-.navDiv > nav > ul > li > a {
-  text-decoration: none;
-  color: #ff6000;
-  font-weight: 800;
-
-  padding: 1rem 2rem;
-}
-
 .navLogo {
   width: 4rem;
   height: 4rem;
   background-color: transparent;
+}
+
+.navDiv > nav > ul {
+  list-style-type: none;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  width: 100%;
+
+  padding: 0.5rem;
+}
+
+.navDiv > nav > ul > li {
+  padding: 0.5rem;
+  margin: 0rem 1rem;
+}
+
+.navDiv > nav > ul > li > a {
+  text-decoration: none;
+  color: #ff6000;
+  font-weight: 800;
+}
+
+.fa-shopping-bag {
+  font-weight: 900;
+  font-size: 40px;
 }
 
 /* FeaturedItems Page */
@@ -159,17 +174,11 @@ nav {
   height: 100%;
 }
 
-.featureOne > h2,
-.featureOne > p {
-  width: 60%;
-  margin: 0;
-}
-
 /* featureOne ($6 Hot n Ready Pizza Deal)*/
 
 .featureOne {
   display: flex;
-  padding: 0%;
+  padding: 0% 10%;
 }
 
 .featOneWrapperDiv {
@@ -186,6 +195,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .featOneTitleDiv {
@@ -194,15 +204,22 @@ nav {
 
 .featOneDollar {
   color: black;
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 800;
 }
 
 .featOneTitle {
-  color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 800;
-  padding: 2rem 1rem 0rem 1rem;
+  margin: 0%;
+}
+
+.featOneSubtitle {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 800;
+
+  margin: 0%;
 }
 
 .featOneCenterDiv {
@@ -215,7 +232,15 @@ nav {
 .featOneDescText {
   font-weight: 800;
   font-size: 1.2rem;
+
   margin: 0%;
+}
+
+.featOneOuterBtnDiv {
+}
+
+.featOneBtnWrapperDiv {
+  display: flex;
 }
 
 .featOneBtnDiv {
@@ -231,9 +256,21 @@ nav {
 }
 
 .featOneLegalDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featOneLegalDiv > p {
   font-size: 0.8rem;
   font-weight: 700;
-  width: 100%;
+}
+
+.featOneBlankDiv {
+}
+
+.featOneImgDiv {
+  cursor: default;
 
   display: flex;
   flex-direction: column;
@@ -241,26 +278,15 @@ nav {
   align-items: center;
 }
 
-.featOneBlankDiv {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 30%;
-}
-
-.featOneImgDiv {
-  cursor: default;
-}
-
 .featOneImgDiv > img {
-  width: 50%;
+  border: 1px solid black;
 }
 
 /* featureTwo (Free Crazy Bread Online Only Deal)*/
 
 .featureTwo {
   display: flex;
-  padding: 0%;
+  padding: 0% 10%;
 }
 
 .featTwoWrapperDiv {
@@ -335,6 +361,9 @@ nav {
 
 .featTwoImgDiv > img {
   width: 50%;
+}
+
+.featTwoImg {
 }
 
 /* featureThree (Exclusive Deals Subscribe)*/
@@ -491,7 +520,7 @@ nav {
 
 .featureFive {
   display: flex;
-  padding: 0%;
+  padding: 0% 10%;
 }
 
 .featFiveWrapperDiv {
@@ -599,7 +628,7 @@ nav {
 
 .featureSix {
   display: flex;
-  padding: 0%;
+  padding: 0% 10%;
 }
 
 .featSixTitleDiv {
@@ -749,6 +778,7 @@ nav {
 
 .featEightCarImgDiv {
   cursor: default;
+  align-self: center;
 }
 
 .featEightCarImgDiv > img {
@@ -762,60 +792,102 @@ nav {
   padding: 0rem 1rem;
 }
 
+.featEightText > h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.featEightText > p {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
 /* featureBottom (create your own pizza) */
 
 .featureBottom {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.featBottomTextDiv {
-  height: 20rem;
-  width: 16rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  border: 1px solid red;
-}
-
-.featBottomTextDiv > h4 {
-  color: black;
-}
-
-.featBottomImgDiv {
-  border: 1px solid black;
-  /* height: 14rem;
-  width: 14rem; */
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
-.featBottomImgDiv > img {
-  width: 200px;
-  height: 200px;
+.featBottomWrapperDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.featBottomDiv {
+  margin: 1rem;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: 220px;
+  justify-content: center;
+  align-items: flex-start;
+  justify-items: center;
+}
+
+.featBottomTextDiv {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 800;
+
+  position: absolute;
+}
+
+.featBottomImage {
+  width: 220px;
+  height: 220px;
+
+  object-fit: cover;
+}
+
+.franDiv {
+  width: 220px;
+  background-color: #ff6000;
 }
 
 .featBottomBtnDiv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #ff6000;
+  height: 100%;
+}
+
+.featBottomBtnDiv > button {
+  padding: 0.6rem 1rem;
 }
 
 /* featureContact */
 
 .featureContact {
   display: flex;
+  margin: 0% 20%;
+}
 
-  margin: 1rem;
+.featContactWrapperDiv {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 220px;
+
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
 }
 
 .featContactText {
-  height: 16rem;
-  width: 14rem;
+  text-align: left;
+
+  height: 200px;
+  width: 220px;
 }
 
 .featContactText > h4 {
@@ -826,50 +898,61 @@ nav {
 .featContactText > ul {
   list-style: none;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin: 0%;
   padding: 0%;
 }
 
 .featContactText > ul > li {
   cursor: pointer;
   font-weight: 600;
+  line-height: 1.6rem;
 }
 
 /* Footer Page */
 
 footer {
-  margin: 1rem 1rem 4rem 1rem;
   display: flex;
   flex-direction: column;
+
+  padding: 2% 10%;
 }
 
-.footerSocialLinks {
+.footerSocialLinksDiv {
   border-top: 1px solid red;
   border-bottom: 1px solid red;
-  font-size: 1rem;
-
-  padding: 0.5rem 0rem;
-  margin: 0rem 0rem 0rem 1rem;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-  font-weight: 700;
 }
 
-.appstore {
+.footerSocialDiv {
+  width: 100%;
+}
+
+.footerSocialDiv > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footerSocialList {
+}
+
+.footerSocialList > li {
+  margin-right: 0.3rem;
+  padding: 0.5rem;
+  list-style-type: none;
+}
+
+.footerAppStoreDiv {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.footerSocialLinks > .appstore > button {
+.footerAppStoreDiv > button {
   height: 2rem;
   width: 8rem;
   background-color: black;
@@ -880,16 +963,12 @@ footer {
   margin: 0rem 0rem 0rem 1rem;
 }
 
-.footerSocialLinks > .appstore > p {
+.footerAppStoreDiv > p {
   font-size: 0.8rem;
   font-weight: 800;
 }
 
-.socials {
-  font-size: 1.2rem;
-}
-
-.footerTermsLinks > ul {
+.footerTermsLinksDiv > ul {
   list-style: none;
   cursor: pointer;
 
@@ -899,18 +978,18 @@ footer {
   align-items: center;
 }
 
-.footerTermsLinks > ul > li {
+.footerTermsLinksDiv > ul > li {
   padding: 1rem 1rem;
   font-size: 0.9rem;
   font-weight: 700;
 }
 
-.footerRights {
+.footerRightsDiv {
   font-size: 0.9rem;
   font-weight: 700;
 }
 
-.footerAccess {
+.footerAccessDiv {
   font-size: 0.9rem;
   font-weight: 700;
 }
