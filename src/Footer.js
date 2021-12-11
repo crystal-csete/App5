@@ -9,16 +9,16 @@ const Footer = () => {
         <div className='footerSocialDiv'>
           <ul className='footerSocialList'>
             <li>
-              <i class='fa fa-facebook-square fa-3x'></i>
+              <i class='fab fa-facebook-square fa-3x'></i>
             </li>
             <li>
-              <i class='fa fa-twitter-square fa-3x'></i>
+              <i class='fab fa-twitter-square fa-3x'></i>
             </li>
             <li>
-              <i class='fa fa-instagram fa-3x'></i>
+              <i class='fab fa-instagram-square fa-3x'></i>
             </li>
             <li>
-              <i class='fa fa-linkedin fa-3x'></i>
+              <i class='fab fa-linkedin fa-3x'></i>
             </li>
           </ul>
         </div>
