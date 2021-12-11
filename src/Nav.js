@@ -1,7 +1,6 @@
 /** @format */
 
 import React from "react";
-import logo from "./images/logo.png";
 
 const Nav = () => {
   return (
@@ -9,7 +8,9 @@ const Nav = () => {
       <nav>
         {/* logo and name div */}
         <div className='navImgDiv'>
-          <img src={logo} className='navLogo' alt='pizza logo' />
+          <i
+            class='fas fa-user-astronaut fa-3x'
+            style={{ color: "#ff6000" }}></i>
           <p>Galactic Pizza</p>
         </div>
 
@@ -23,7 +24,7 @@ const Nav = () => {
           {/* "Shopping bag" or "cart" logo list item */}
           <li>
             <a href='#cart'>
-              <i class='fa fa-shopping-bag fa-lg'></i>
+              <i class='fas fa-shopping-bag fa-lg'></i>
             </a>
           </li>
         </ul>
