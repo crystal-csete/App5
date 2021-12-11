@@ -1,17 +1,7 @@
 /** @format */
 
 import React from "react";
-import featone from "./images/featone.jpg";
 import feattwo from "./images/feattwo.png";
-import pizzabread from "./images/pizzabread.jpg";
-import brownie from "./images/brownie.png";
-import character from "./images/character.jpg";
-import shop from "./images/shop.jpg";
-import car from "./images/car.png";
-import price from "./images/price.png";
-import phone from "./images/phone.png";
-import drivethru from "./images/drivethru.png";
-import pizza from "./images/pizza.png";
 import pizzabg from "./images/pizzabg.jpg";
 import supremebg from "./images/supremebg.jpg";
 import sidebg from "./images/sidebg.jpg";
@@ -46,8 +36,12 @@ const FeaturedItems = () => {
               {/* order button div inside middle content div*/}
               <div className='featOneOuterBtnDiv'>
                 <div className='featOneBtnWrapperDiv'>
-                  <p className='featOneDelivery'>🚘 Delivery!</p>
-                  <p className='featOneDelivery'>Delivery! 🎇</p>
+                  <i class='far fa-star-half fa-2x'></i>
+                  <i class='fas fa-user-astronaut fa-2x'></i>
+                  <p className='featOneDelivery'>
+                    Delivery! <br /> Delivery!
+                  </p>
+                  <i class='far fa-star-half fa-flip-horizontal fa-2x'></i>
 
                   {/* button div */}
                   <div className='featOneBtnDiv'>
@@ -72,7 +66,7 @@ const FeaturedItems = () => {
           {/* right image div */}
           <div className='featOneBlankDiv'>
             <div className='featOneImgDiv'>
-              <img src={featone} alt='pizza' />
+              <img src={feattwo} alt='pizza' />
             </div>
           </div>
 
@@ -175,11 +169,7 @@ const FeaturedItems = () => {
             {/* left side "3.69" text div */}
             <div className='featFiveTitleDiv'>
               <div className='featFivePriceImgDiv'>
-                <img
-                  src={price}
-                  alt='hot price tag'
-                  className='featFiveDollar'
-                />
+                <i class='fas fa-fire-alt fa-3x'></i>
               </div>
 
               <h1 className='featFiveTitle'>
@@ -214,7 +204,9 @@ const FeaturedItems = () => {
           {/* right side image div */}
           <div className='featFiveBlankDiv'>
             <div className='featFiveDealImgDiv'>
-              <img src={brownie} alt='brownies' />
+              <i class='fas fa-cookie fa-5x'></i>
+              <i class='fas fa-cookie fa-5x'></i>
+              <i class='fas fa-cookie fa-5x'></i>
             </div>
           </div>
         </div>
@@ -223,12 +215,13 @@ const FeaturedItems = () => {
       {/* FEATURE SIX */}
       <div className='featureSix'>
         {/* upper title div */}
-        <div className='featSixTitleDiv'>
+        <div className='featSixupWrapperDiv'>
+          {/* title div */}
           <div className='featSixHiring'>
             <p className='featSixJobText'>Now Hiring! STORE JOBS</p>
             {/* lower left image div */}
             <div className='featSixImgShopDiv'>
-              <img src={shop} alt='pizza resturant' />
+              <i class='fas fa-store'></i>
             </div>
           </div>
         </div>
@@ -237,7 +230,7 @@ const FeaturedItems = () => {
         <div className='featSixLowWrapperDiv'>
           {/* lower right image div */}
           <div className='featSixImgCharDiv'>
-            <img src={character} alt='pizza character' />
+            <i class='fas fa-user-astronaut'></i>
             {/* right side button div */}
             <div className='featSixBtnDiv'>
               <button>APPLY NOW</button>
@@ -264,7 +257,8 @@ const FeaturedItems = () => {
           {/* right side image div */}
           <div className='featSevBlankDiv'>
             <div className='featSevImgCharDiv'>
-              <img src={character} alt='pizza character' />
+              <i class='fas fa-user-astronaut'></i>
+              <i class='fas fa-comments-dollar'></i>
             </div>
           </div>
         </div>
@@ -292,7 +286,7 @@ const FeaturedItems = () => {
           <div className='featEightOptionDivs'>
             {/* thumbnail image for option divs*/}
             <div className='featEightCarImgDiv'>
-              <img src={car} alt='red car' />
+              <i class='fa fa-car fa-3x'></i>
             </div>
 
             {/* "description" text div */}
@@ -308,7 +302,7 @@ const FeaturedItems = () => {
           <div className='featEightOptionDivs'>
             {/* thumbnail image for option divs*/}
             <div className='featEightCarImgDiv'>
-              <img src={phone} alt='phone' />
+              <i class='fa fa-phone fa-3x'></i>
             </div>
 
             {/* "description" text div */}
@@ -325,7 +319,7 @@ const FeaturedItems = () => {
           <div className='featEightOptionDivs'>
             {/* thumbnail image for option divs*/}
             <div className='featEightCarImgDiv'>
-              <img src={pizza} alt='hot pizza' />
+              <i class='fa fa-fire fa-3x'></i>
             </div>
 
             {/* "description" text div */}
@@ -339,7 +333,7 @@ const FeaturedItems = () => {
           <div className='featEightOptionDivs'>
             {/* thumbnail image for option divs*/}
             <div className='featEightCarImgDiv'>
-              <img src={drivethru} alt='drive thru' />
+              <i class='fa fa-car fa-3x'></i>
             </div>
 
             {/* "description" text div */}
