@@ -91,11 +91,7 @@ nav {
   font-weight: 900;
   font-size: 40px;
 }
-
-/* FeaturedItems Page */
-
-/* .featureDiv {
-} */
+/* UNIVERSAL FOR ALL FEATURES */
 
 .featureOne,
 .featureTwo,
@@ -107,7 +103,6 @@ nav {
 .featureEight {
   padding: 1rem;
 
-  /* min-height: 45.5vh; */
   border-bottom: 8px solid #ffffff;
   border-top: 8px solid #ffffff;
 }

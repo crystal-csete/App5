@@ -1,15 +1,20 @@
 /** @format */
 import React from "react";
 import "./App.css";
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import { fab } from "@fortawesome/fontawesome-free";
-// import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 import Nav from "./Nav";
-import FeaturedItems from "./FeaturedItems";
-import Footer from "./Footer";
+import FeatureOne from "./FeatureOne";
+import FeatureTwo from "./FeatureTwo";
+import FeatureThree from "./FeatureThree";
+import FeatureFour from "./FeatureFour";
+import FeatureFive from "./FeatureFive";
+import FeatureSix from "./FeatureSix";
+import FeatureSeven from "./FeatureSeven";
+import FeatureEight from "./FeatureEight";
+import FeatureBottom from "./FeatureBottom";
+import FeatureContact from "./FeatureContact";
 
-// library.add(fab, faCheckSquare, faCoffee);
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -22,7 +27,16 @@ function App() {
         <button>Delivery</button>
       </header>
       <section>
-        <FeaturedItems />
+        <FeatureOne />
+        <FeatureTwo />
+        <FeatureThree />
+        <FeatureFour />
+        <FeatureFive />
+        <FeatureSix />
+        <FeatureSeven />
+        <FeatureEight />
+        <FeatureBottom />
+        <FeatureContact />
       </section>
       <Footer />
     </div>
